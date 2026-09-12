@@ -10,3 +10,15 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(1, 0)
+
+@pytest.mark.parametrize(
+    'case',
+    [
+        {'id':10001},
+        {'id':10002}
+    ]
+)
+def test_use_code(case):
+
+    assert case["id"]==10001
+    assert True
