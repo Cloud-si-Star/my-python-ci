@@ -7,7 +7,7 @@ def api():
 
 @pytest.fixture(scope="session")
 def login_token(api):
-    resp=api.login("/posts",json={"username":"admin","password":"123"})
+    resp=api.post("/posts",json={"username":"admin","password":"123"})
     token = resp.json().get("id")
     assert token is not None
     return token

@@ -8,7 +8,7 @@ def read_yaml(path):
 
 # 读取yaml配置
 def get_config():
-    return read_yaml("../config/config.yaml")
+    return read_yaml("config/config.yaml")
 
 # 获取env配置
 def get_env_config():

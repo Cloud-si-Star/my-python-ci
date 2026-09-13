@@ -6,6 +6,8 @@ __pycache__/
 .idea/
 report.xml
 use_main.py
+reports/
+allure-results/
 
 # C extensions
 *.so

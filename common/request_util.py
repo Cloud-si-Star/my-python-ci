@@ -13,7 +13,7 @@ class RequestUtil:
         url=self.base_url+path
         kwargs.setdefault("timeout",self.timeout)
         logger.info(f"请求{method.upper()}{url}|参数：{kwargs}")
-        resp=self.session(method,url,**kwargs)
+        resp=self.session.request(method,url,**kwargs)
         logger.info(f"响应{resp.status_code}|{resp.text[:200]}")
         return resp
 

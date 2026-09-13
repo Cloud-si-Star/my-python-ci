@@ -1,7 +1,7 @@
 import pytest
 from common.assert_util import assert_status_code,assert_key_exists,assert_json_value
 
-def test_get_user(api,login):
+def test_get_user(api,login_token):
     resp=api.get("/posts/1")
     assert_status_code(resp,200)
     assert_key_exists(resp,"id")
