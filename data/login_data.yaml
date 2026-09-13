@@ -1,0 +1,9 @@
+- case_name: "正常登录"
+  username: "admin"
+  password: "123"
+  expected_status: 201
+
+- case_name: "错误密码"
+  username: "admin"
+  password: "wrong"
+  expected_status: 201

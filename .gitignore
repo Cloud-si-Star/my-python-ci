@@ -5,6 +5,7 @@ __pycache__/
 
 .idea/
 report.xml
+use_main.py
 
 # C extensions
 *.so

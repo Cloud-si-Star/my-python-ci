@@ -1,0 +1,9 @@
+env: test
+
+test:
+  base_url: "https://jsonplaceholder.typicode.com"
+  timeout: 10
+
+prod:
+  base_url: "https://jsonplaceholder.typicode.com"
+  timeout: 10
