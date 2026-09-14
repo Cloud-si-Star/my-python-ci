@@ -25,7 +25,7 @@ jobs:
         pip install -r requirements-dev.txt
 
     - name: 运行测试
-      run: pytest -v --junitxml=report.xml
+      run: pytest -v --junitxml=report.xml -m alone
 
     - name: 展示测试报告
       if: always()

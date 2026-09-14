@@ -1,0 +1,13 @@
+#普通post测试数据
+post_case:
+  #验证通过数据
+  - code: 201
+    userId: 10
+    text_exits: "pytest"
+    key_exits: "body"
+
+  #验证失败数据
+  - code: 201
+    key_exits: "body"
+    text_exits: "python"
+    userId: 15
